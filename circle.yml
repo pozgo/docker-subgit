@@ -1,0 +1,15 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - docker info && docker version
+
+test:
+  pre:
+    - docker build -t polinux/subgit:circleci .
+
+  override:
+  # Start subgit
+    - docker run -ti --name subgit polinux/subgit:circleci subgit help import
