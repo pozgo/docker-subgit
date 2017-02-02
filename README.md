@@ -23,7 +23,8 @@ Workdir is set to `/subgit`
     docker run \
       -ti \
       --name subgit \
-      polinux/subgit
+      polinux/subgit \
+      subgit <subgit-commands>
 
 Mount Volume into working directory
 
@@ -31,7 +32,8 @@ Mount Volume into working directory
       -ti \
       --name subgit \
       -v ${PWD}/workdir:/subgit \
-      polinux/subgit
+      polinux/subgit \
+      subgit <subgit-commands>
 
 ### Build
 
