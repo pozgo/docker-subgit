@@ -1,6 +1,6 @@
 FROM alpine:3.1
 
-ENV SUBGIT_VERSION=3.2.4
+ENV SUBGIT_VERSION=3.2.5
 
 RUN \
   apk add --update curl bash openjdk7-jre && \
