@@ -1,4 +1,4 @@
-FROM alpine:3.1
+FROM alpine:latest
 
 ENV SUBGIT_VERSION=3.2.5
 
